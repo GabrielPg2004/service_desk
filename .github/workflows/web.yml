@@ -1,4 +1,4 @@
-name: Testar e publicar (Web)
+name: Testar, compilar e publicar
 
 on:
   push:
@@ -34,7 +34,9 @@ jobs:
           destino=~/.local/share/godot/export_templates/${GODOT_VERSION}.stable
           mkdir -p $destino
           unzip -qj Godot_v${GODOT_VERSION}-stable_export_templates.tpz \
-            templates/web_nothreads_release.zip templates/web_nothreads_debug.zip templates/version.txt -d $destino
+            templates/web_nothreads_release.zip templates/web_nothreads_debug.zip \
+            templates/windows_release_x86_64.exe templates/windows_debug_x86_64.exe \
+            templates/linux_release.x86_64 templates/linux_debug.x86_64 templates/version.txt -d $destino
           rm -f *.zip *.tpz
 
       - name: Testes
@@ -45,6 +47,25 @@ jobs:
           mkdir -p build/web
           godot --headless --path . --export-release "Web" build/web/index.html
           test -f build/web/index.pck
+
+      - name: Exportar para Windows e Linux
+        run: |
+          mkdir -p build/windows build/linux
+          godot --headless --path . --export-release "Windows" build/windows/ChamadoAberto.exe
+          godot --headless --path . --export-release "Linux" build/linux/ChamadoAberto.x86_64
+          test -f build/windows/ChamadoAberto.exe && test -f build/linux/ChamadoAberto.x86_64
+
+      - name: Disponibilizar versão Windows
+        uses: actions/upload-artifact@v4
+        with:
+          name: ChamadoAberto-Windows
+          path: build/windows/ChamadoAberto.exe
+
+      - name: Disponibilizar versão Linux
+        uses: actions/upload-artifact@v4
+        with:
+          name: ChamadoAberto-Linux
+          path: build/linux/ChamadoAberto.x86_64
 
       - name: Enviar build para o GitHub Pages
         if: github.ref == 'refs/heads/main'

@@ -28,6 +28,18 @@ Também funciona com controle (direcional, botão A e Start).
 
 ## Como jogar
 
+### Versão pronta (Windows ou Linux)
+A cada push, o GitHub Actions compila o jogo. Abra a aba **Actions** do repositório, entre na execução mais recente de "Testar, compilar e publicar" e baixe o artefato **ChamadoAberto-Windows** (ou **-Linux**). Descompacte e abra o `ChamadoAberto.exe`; não precisa instalar nada.
+
+Na primeira vez, o Windows SmartScreen pode avisar que o app é desconhecido (ele não é assinado). Clique em **Mais informações → Executar assim mesmo**.
+
+Para compilar localmente, com os templates de exportação do Godot 4.5.1 instalados:
+
+```bash
+godot --headless --path . --export-release "Windows" build/windows/ChamadoAberto.exe
+godot --headless --path . --export-release "Linux" build/linux/ChamadoAberto.x86_64
+```
+
 ### No navegador
 O workflow `.github/workflows/web.yml` testa, exporta e publica o jogo no **GitHub Pages** a cada push na `main`. Para ativar:
 
