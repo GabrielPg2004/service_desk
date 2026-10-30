@@ -12,6 +12,8 @@ Você é **Gabriel Esteka**, que acaba de chegar ao Primeiro Atendimento como an
 
 Não existe game over: errar uma resposta só custa estrelas na avaliação do chamado. No fim da semana, cada colega ganha um epílogo, que depende da amizade construída.
 
+![Telas do jogo: título, atendimento, incidente e equipe](docs/capturas/colagem.png)
+
 ## Controles
 
 | Ação | Teclas |
