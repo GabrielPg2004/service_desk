@@ -1,0 +1,476 @@
+[
+  {
+    "id": "d1_tiao_pc", "dia": 1, "hora": "08:30", "canal": "balcao", "cliente": "tiao",
+    "titulo": "Computador não liga",
+    "abertura": ["Bom dia! É aqui que conserta computador?", "O meu não liga. E eu juro que não mexi em nada."],
+    "etapas": [
+      {"pergunta": "O que você pergunta primeiro?", "opcoes": [
+        {"t": "Tem alguma luz acesa, no monitor ou no gabinete?", "ok": true, "r": ["Deixa eu lembrar... a do monitor fica laranjinha. A do gabinete, nenhuma."]},
+        {"t": "Já tentou reiniciar?", "r": ["Reiniciar como, se nem liga?"]},
+        {"t": "Vou abrir um pedido de troca do equipamento.", "r": ["Trocar? Mas ele é tão novinho... é de 2014."]}
+      ]},
+      {"pergunta": "Gabinete sem nenhuma luz. O que você orienta?", "opcoes": [
+        {"t": "Confere se o cabo de energia está encaixado e se o filtro de linha está ligado.", "ok": true, "r": ["@narrador: Seu Tião liga para o colega da sala dele, que confere embaixo da mesa.", "...O filtro tava desligado. Devo ter encostado o pé.", "Mas mexer, eu não mexi!"]},
+        {"t": "Deve ser a fonte queimada.", "r": ["Queimada? Não senti cheiro de nada..."]},
+        {"t": "Formata que resolve.", "r": ["Formatar? Isso é tipo apagar tudo? Credo, e as fotos do pesqueiro?"]}
+      ]}
+    ],
+    "conclusao": ["Ligou! Você é um anjo.", "Qualquer dia eu trago um bolo de fubá pro pessoal."]
+  },
+  {
+    "id": "d1_marlene_senha", "dia": 1, "hora": "09:40", "canal": "telefone", "cliente": "marlene",
+    "titulo": "Senha bloqueada",
+    "abertura": ["Oi, meu anjo! Aqui é a Marlene, do RH. Tudo bem? Que bom!", "Então, eu errei a senha umas... sete vezes? Agora diz que tá bloqueada. Eu acho. Tá vermelho."],
+    "etapas": [
+      {"pergunta": "Antes de mexer na conta, o que você faz?", "opcoes": [
+        {"t": "Confirmo sua identidade: matrícula e data de admissão, por favor.", "ok": true, "r": ["Matrícula 30418, admissão em março de 2011. Nossa, que segurança! Gostei."]},
+        {"t": "Desbloqueio direto, a senhora parece honesta.", "r": ["Ué, nem vai conferir quem eu sou? Eu podia ser qualquer uma, meu anjo!"]},
+        {"t": "Pode me falar a senha antiga?", "r": ["Se eu lembrasse da senha, não tava ligando, né, meu anjo?"]}
+      ]},
+      {"pergunta": "Identidade confirmada. E a senha nova?", "opcoes": [
+        {"t": "Gero uma senha temporária e você troca no primeiro acesso.", "ok": true, "r": ["Ai, entrei! Já pediu pra trocar. Vou colocar o nome do meu gato. Brincadeira!"]},
+        {"t": "Coloco \"Goestalpine123\" pra facilitar.", "r": ["Ué, essa não é a senha que metade da empresa usa? Até eu sei disso!"]},
+        {"t": "Mando a senha nova pro seu e-mail.", "r": ["Mas, meu anjo, eu não consigo entrar no e-mail. Foi por isso que eu liguei!"]}
+      ]}
+    ],
+    "conclusao": ["Obrigada, meu anjo! Vou te mandar um áudio agradecendo. Ele tem só três minutinhos."]
+  },
+  {
+    "id": "d1_juninho_impressora", "dia": 1, "hora": "10:45", "canal": "balcao", "cliente": "juninho",
+    "titulo": "Instalar impressora",
+    "abertura": ["E aí! Juninho, do Marketing. Chegou meu notebook novo pras apresentações.", "Preciso imprimir uns panfletos. Instala a impressora pra mim? É rapidinho."],
+    "etapas": [
+      {"pergunta": "O que você precisa saber primeiro?", "opcoes": [
+        {"t": "Qual impressora? Tem um nome ou etiqueta nela?", "ok": true, "r": ["Tem uma etiqueta... PA-IMP-01! É essa aí atrás de você, inclusive."]},
+        {"t": "Instalo todas as impressoras do prédio, assim não erra.", "r": ["Todas? Vai ficar igual meu celular, com 400 aplicativos."]},
+        {"t": "Por que não imprime em casa?", "r": ["Porque a impressora lá de casa é o meu cunhado. E ele cobra."]}
+      ]}
+    ],
+    "tarefas": [
+      {"alvo": "obj:impressora", "objetivo": "Pegue o IP no painel da impressora PA-IMP-01",
+       "falas": ["@narrador: Você navega pelo menu da impressora até a tela de rede."],
+       "minigame": {"titulo": "Menu da impressora PA-IMP-01", "setas": 5},
+       "depois": ["@narrador: IP anotado: 10.20.4.15."]},
+      {"alvo": "cliente", "objetivo": "Volte ao Juninho, no balcão",
+       "falas": ["E aí, achou?"],
+       "etapa": {"pergunta": "Com o IP em mãos, como você instala?", "opcoes": [
+         {"t": "Adiciono pelo IP, com o driver oficial do fabricante.", "ok": true, "r": ["Página de teste saindo! Olha que linda!"]},
+         {"t": "Baixo um driver de um site qualquer.", "r": ["Opa, o antivírus da empresa começou a apitar aqui..."]},
+         {"t": "Compartilho a impressora pelo meu computador.", "r": ["Mas aí, quando você desligar o seu PC, eu não imprimo mais, né?"]}
+       ]}}
+    ],
+    "conclusao": ["Valeu! Agora vou imprimir 300 panfletos. Brincadeira. São 280."]
+  },
+  {
+    "id": "d1_sandra_email", "dia": 1, "hora": "13:20", "canal": "balcao", "cliente": "sandra",
+    "titulo": "Caixa de e-mail cheia",
+    "abertura": ["Boa tarde. Dra. Sandra Vilela, Jurídico.", "Minha caixa de e-mail atingiu o limite. Não envio nem recebo nada. Inadmissível, com três prazos correndo."],
+    "etapas": [
+      {"pergunta": "O que você propõe?", "opcoes": [
+        {"t": "Arquivo os e-mails antigos num arquivo local, sem excluir nada.", "ok": true, "r": ["Arquivar, não excluir. Apreciei a distinção."]},
+        {"t": "Apago tudo de antes de 2020.", "r": ["Há processos de 2019 nesta caixa. Sugiro que reconsidere. Juridicamente."]},
+        {"t": "Peço mais espaço pra diretoria.", "r": ["Já pedi três vezes. A diretoria respondeu: \"falar com o Service Desk\"."]}
+      ]},
+      {"pergunta": "Como evitar que lote de novo?", "opcoes": [
+        {"t": "Salvar anexos grandes na pasta do Jurídico na rede e mandar só o link.", "ok": true, "r": ["Link em vez de anexo. Coerente. Vou instruir a equipe."]},
+        {"t": "Parar de receber anexos.", "r": ["Sou advogada. Anexo é meu idioma nativo."]},
+        {"t": "Criar uma segunda conta de e-mail.", "r": ["Duas caixas cheias em vez de uma. Engenhoso."]}
+      ]}
+    ],
+    "conclusao": ["Funcionou. Obrigada pela eficiência.", "Se precisar de um parecer sobre a garantia da impressora, estou à disposição."]
+  },
+  {
+    "id": "d1_katia_mouse", "dia": 1, "hora": "15:10", "canal": "telefone", "cliente": "katia",
+    "titulo": "Mouse parou",
+    "abertura": ["Kátia, do Compras! Rapidinho, que tenho reunião: meu mouse parou de funcionar."],
+    "etapas": [
+      {"pergunta": "O que você orienta?", "opcoes": [
+        {"t": "É sem fio? Confere a pilha e se o receptor USB está encaixado.", "ok": true, "r": ["Receptor... tava no bolso. Do meu casaco. Encaixei, funcionou!"]},
+        {"t": "Abro um pedido de mouse novo.", "r": ["Pedido de compra leva quinze dias. Minha reunião é em quinze minutos."]},
+        {"t": "Usa o teclado, com as setas.", "r": ["Navegar numa planilha de cotação só com as setas? Prefiro morrer."]}
+      ]}
+    ],
+    "conclusao": ["Valeu! Tchau!"]
+  },
+
+  {
+    "id": "d2_helio_compra", "dia": 2, "hora": "08:30", "canal": "balcao", "cliente": "helio",
+    "titulo": "Computador novo (Financeiro)",
+    "abertura": ["Bom dia. Hélio Prado, diretor financeiro.", "Meu notebook leva onze minutos para ligar. Eu cronometrei. Preciso de um computador novo."],
+    "etapas": [
+      {"pergunta": "O que é necessário para pedir um computador?", "opcoes": [
+        {"t": "Abrir uma solicitação de compra com aprovação do gestor e centro de custo.", "ok": true, "r": ["O gestor sou eu. Aprovado. Centro de custo 4410. Anote."]},
+        {"t": "Pego um do estoque, ninguém vai perceber.", "r": ["Sou o diretor financeiro. Eu percebo tudo o que sai do estoque."]},
+        {"t": "O senhor compra no cartão corporativo.", "r": ["O cartão corporativo é meu. E não, não vou usar para isso."]}
+      ]}
+    ],
+    "tarefas": [
+      {"alvo": "npc:otavio", "objetivo": "Abra a solicitação de compra com o Otávio, no Backoffice",
+       "falas": ["Hm. Solicitação de compra. Pra quem?", "@gabriel: Pro Sr. Hélio, do Financeiro. Centro de custo 4410, já aprovado.", "Especificação?"],
+       "etapa": {"pergunta": "Qual especificação você passa?", "opcoes": [
+         {"t": "Notebook padrão do Financeiro: 16 GB de memória e SSD de 512.", "ok": true, "r": ["Padrão. Gosto de padrão."]},
+         {"t": "O mais caro que tiver, ele é diretor.", "r": ["Não. Próximo."]},
+         {"t": "Qualquer um que ligue rápido.", "r": ["\"Qualquer um que ligue rápido\" não é especificação. É desespero."]}
+       ]},
+       "depois": ["Solicitação SC-2231 aberta. Previsão de entrega: quinze dias úteis. Avisa o diretor."]}
+    ],
+    "conclusao": ["@narrador: Você envia o número da solicitação para o Sr. Hélio.", "@helio: Quinze dias. Hm. Pelo menos agora tem número. Obrigado."]
+  },
+  {
+    "id": "d2_katia_vpn", "dia": 2, "hora": "09:20", "canal": "telefone", "cliente": "katia",
+    "titulo": "VPN não conecta",
+    "abertura": ["Kátia, do Compras! Tô visitando um fornecedor e a VPN não conecta.", "Preciso aprovar uma cotação que vence em uma hora!"],
+    "etapas": [
+      {"pergunta": "Por onde começar?", "opcoes": [
+        {"t": "A internet aí funciona? Consegue abrir um site qualquer?", "ok": true, "r": ["Abre, sim. O site do fornecedor abriu normal.", "Mas a VPN diz que o código do autenticador está errado."]},
+        {"t": "Desinstala e instala a VPN de novo.", "r": ["Não tenho permissão de administrador. Já tentei."]},
+        {"t": "VPN é complicado, tenta amanhã.", "r": ["Amanhã? A cotação vence em UMA HORA!"]}
+      ]},
+      {"pergunta": "O código do autenticador é recusado. O que você verifica?", "opcoes": [
+        {"t": "Se a data e a hora do celular estão no automático.", "ok": true, "r": ["Tava no fuso de Portugal desde as férias! Mudei... CONECTOU!"]},
+        {"t": "Desativo a autenticação em duas etapas da sua conta.", "r": ["Isso não é tipo... tirar a fechadura da porta?"]},
+        {"t": "Usa o Wi-Fi do fornecedor sem VPN.", "r": ["Acessar o sistema de compras pelo Wi-Fi do fornecedor? Nem eu topo isso."]}
+      ]}
+    ],
+    "conclusao": ["Cotação aprovada com quarenta minutos de folga! Valeu demais!"]
+  },
+  {
+    "id": "d2_marlene_pasta", "dia": 2, "hora": "10:40", "canal": "balcao", "cliente": "marlene",
+    "titulo": "Acesso à pasta do RH",
+    "abertura": ["Oi, meu anjo! Vim pessoalmente, porque áudio você não escuta, né? Brincadeira!", "Entrou uma moça nova no RH, a Carla, e ela precisa acessar a pasta de admissões na rede."],
+    "etapas": [
+      {"pergunta": "O que é necessário para liberar o acesso?", "opcoes": [
+        {"t": "A aprovação de quem é responsável pela pasta.", "ok": true, "r": ["A responsável sou eu! Aprovo! Mando por escrito, que eu sei que vocês gostam."]},
+        {"t": "Dou acesso de administrador, aí ela acessa tudo.", "r": ["Tudo? Até a pasta de salários? Meu anjo, isso dá demissão. A sua."]},
+        {"t": "Ela pode usar o seu login enquanto isso.", "r": ["Ah, não. Da última vez que emprestei a senha, trocaram meu papel de parede por um pinguim."]}
+      ]}
+    ],
+    "tarefas": [
+      {"alvo": "npc:otavio", "objetivo": "Peça ao Otávio, no Backoffice, para aplicar a permissão",
+       "falas": ["Permissão de pasta. Tem aprovação por escrito?", "@gabriel: Tem, da Marlene, responsável pela pasta.", "Hm. E como você quer que eu aplique?"],
+       "etapa": {"pergunta": "Como aplicar a permissão?", "opcoes": [
+         {"t": "Coloca a Carla no grupo de acesso da pasta de admissões.", "ok": true, "r": ["Grupo existente. Permissão por grupo. Finalmente alguém que entende."]},
+         {"t": "Coloca no grupo \"Todos\", é mais rápido.", "r": ["E aí a empresa inteira lê as admissões. Ótima ideia. Não."]},
+         {"t": "Cria um grupo novo só pra ela.", "r": ["Um grupo por pessoa? Quer me ver chorar?"]}
+       ]},
+       "depois": ["Feito. Avisa a Marlene."]}
+    ],
+    "conclusao": ["@narrador: Marlene responde seu e-mail com um áudio de dois minutos. Resumindo: deu certo."]
+  },
+  {
+    "id": "d2_tiao_ramal", "dia": 2, "hora": "13:20", "canal": "telefone", "cliente": "tiao",
+    "titulo": "Ramal mudo",
+    "abertura": ["Alô? Alô? Ah, agora foi. Tô ligando do celular.", "O telefone da minha sala tá mudo. Ramal 2214. E eu não mexi em nada!"],
+    "etapas": [
+      {"pergunta": "O que você pede para ele conferir?", "opcoes": [
+        {"t": "O cabo de rede do telefone está bem encaixado na tomada da parede?", "ok": true, "r": ["Tá encaixado. Mas o ponto na parede diz 3B-07 e a luzinha dele tá apagada."]},
+        {"t": "Dá um tapinha no telefone, com jeitinho.", "r": ["Bati. Agora, além de mudo, ele tá torto."]},
+        {"t": "Usa o celular mesmo.", "r": ["Mas o celular é meu, e quem paga a conta sou eu, ué."]}
+      ]}
+    ],
+    "tarefas": [
+      {"alvo": "npc:luana", "objetivo": "Leve o problema do ramal à Luana, no Telecom",
+       "falas": ["Ramal mudo? Me passa os dados."],
+       "etapa": {"pergunta": "O que você informa?", "opcoes": [
+         {"t": "Ramal 2214, sala da Manutenção, ponto de rede 3B-07.", "ok": true, "r": ["Isso é que é chamado bem aberto. Deixa eu ver...", "A porta do switch tá desativada. Liga ela no patch panel pra mim? É o rack com os cabos coloridos."]},
+         {"t": "Um ramal aí que tá mudo.", "r": ["\"Um ramal aí\". Temos seiscentos ramais. Qual?"]},
+         {"t": "O Seu Tião disse que não mexeu em nada.", "r": ["Essa frase nunca, jamais, em tempo algum ajudou um diagnóstico.", "Mais dados, por favor."]}
+       ]}},
+      {"alvo": "obj:rack_rede", "objetivo": "Ative a porta 3B-07 no patch panel do Telecom",
+       "falas": ["@narrador: Você localiza a porta 3B-07 e acessa a configuração."],
+       "minigame": {"titulo": "Ativando a porta 3B-07", "setas": 6},
+       "depois": ["@narrador: A luz da porta 3B-07 acende, verdinha."]}
+    ],
+    "conclusao": ["@tiao: Alô? ALÔ! Tá funcionando! Pelo ramal! Obrigado, viu?"]
+  },
+  {
+    "id": "d2_juninho_software", "dia": 2, "hora": "15:00", "canal": "balcao", "cliente": "juninho",
+    "titulo": "Programa de edição de vídeo",
+    "abertura": ["Fala! Preciso de um programa de edição de vídeo pro Marketing.", "Achei uma versão \"liberada\" num site aí. Instala pra mim? É rapidinho."],
+    "etapas": [
+      {"pergunta": "Como você responde?", "opcoes": [
+        {"t": "Esse software precisa de licença. Abro uma solicitação pro seu gestor aprovar.", "ok": true, "r": ["Ah, tem que ter licença? Beleza. Meu gestor aprova tudo que tem a palavra \"vídeo\"."]},
+        {"t": "Instalo a versão \"liberada\", ninguém vai ver.", "r": ["Maneiro! ...Espera, por que o antivírus tá gritando?"]},
+        {"t": "Não pode, e pronto.", "r": ["Nossa. Nem um \"talvez\"? Nem uma alternativa?"]}
+      ]},
+      {"pergunta": "Enquanto a licença não sai, o que mais você oferece?", "opcoes": [
+        {"t": "Tem um editor gratuito e homologado na central de software. Te mostro.", "ok": true, "r": ["Esse aí serve! Dá até pra colocar transição de estrelinha!"]},
+        {"t": "Edita no celular.", "r": ["Vídeo institucional editado no celular? O diretor vai achar que é meme."]},
+        {"t": "Espera a licença, uns trinta dias.", "r": ["Trinta dias? A campanha é na semana que vem!"]}
+      ]}
+    ],
+    "conclusao": ["Valeu! Vou fazer um vídeo com tanta transição de estrelinha que o diretor vai chorar."]
+  },
+
+  {
+    "id": "d3_sandra_phishing", "dia": 3, "hora": "08:40", "canal": "telefone", "cliente": "sandra",
+    "titulo": "E-mail suspeito",
+    "abertura": ["Bom dia. Recebi um e-mail dizendo que meu certificado digital expira hoje.", "Pede para eu clicar num link e informar meus dados. O remetente é \"suporte-jur1dico\". Com o número um no lugar do i."],
+    "etapas": [
+      {"pergunta": "Qual a orientação?", "opcoes": [
+        {"t": "Não clique! Encaminhe para a Segurança da Informação e apague.", "ok": true, "r": ["Foi o que imaginei. Porém...", "Confesso que cliquei antes de ligar. E digitei minha senha."]},
+        {"t": "Clica pra ver se é verdade.", "r": ["Sou doutora em Direito, não em imprudência. Não vou clicar."]},
+        {"t": "Responde perguntando se é golpe.", "r": ["Perguntar ao golpista se ele é golpista. Interessante estratégia de interrogatório."]}
+      ]},
+      {"pergunta": "Ela digitou a senha no site falso. E agora?", "opcoes": [
+        {"t": "Troco sua senha agora e aviso a Segurança para monitorar a conta.", "ok": true, "r": ["Senha trocada. Agradeço a rapidez.", "E prometo desconfiar de qualquer \"jur1dico\" daqui em diante."]},
+        {"t": "Tudo bem, não deve dar nada.", "r": ["\"Não deve dar nada\" é o que todo réu diz."]},
+        {"t": "Bloqueio seu computador para sempre.", "r": ["\"Para sempre\" é um prazo excessivo, até para o Judiciário."]}
+      ]}
+    ],
+    "conclusao": ["@narrador: A Segurança da Informação agradece o aviso. Mais três pessoas tinham recebido o mesmo e-mail."]
+  },
+  {
+    "id": "d3_pedro_onboarding", "dia": 3, "hora": "09:50", "canal": "balcao", "cliente": "pedro",
+    "titulo": "Primeiro dia: acesso e equipamento",
+    "abertura": ["Oi, bom dia! Eu sou o Pedro, comecei hoje na Logística.", "Me mandaram aqui pra pegar computador e senha. Tô meio perdido... primeiro emprego em empresa grande."],
+    "etapas": [
+      {"pergunta": "O que você confere antes de tudo?", "opcoes": [
+        {"t": "Se o RH abriu a solicitação de admissão no sistema.", "ok": true, "r": ["@narrador: Lá está: \"Admissão: Pedro Alves, Logística. Kit padrão: notebook e headset\".", "Ufa, eu existo no sistema!"]},
+        {"t": "Crio uma conta com o nome que você disser.", "r": ["Hã... mas você nem sabe se eu trabalho aqui mesmo, né?"]},
+        {"t": "Volta quando o RH resolver tudo.", "r": ["Mas o RH falou pra eu vir aqui..."]}
+      ]}
+    ],
+    "tarefas": [
+      {"alvo": "obj:estoque", "objetivo": "Retire o kit (notebook + headset) no almoxarifado do Backoffice",
+       "falas": ["@narrador: Na estante do almoxarifado, uma caixa etiquetada: \"KIT LOGÍSTICA - PEDRO ALVES\"."],
+       "depois": ["@narrador: Kit retirado e registrado na saída do estoque."]},
+      {"alvo": "cliente", "objetivo": "Entregue o kit ao Pedro, no balcão",
+       "falas": ["Uau, notebook novinho!"],
+       "etapa": {"pergunta": "Hora do primeiro acesso. O que você orienta?", "opcoes": [
+         {"t": "Te mostro como trocar a senha temporária e configurar o autenticador.", "ok": true, "r": ["Senha trocada e autenticador no celular! Me sinto um hacker. Do bem."]},
+         {"t": "Anota a senha num post-it e cola no monitor.", "r": ["No monitor? Mas aí qualquer pessoa vê, não?"]},
+         {"t": "Usa o seu nome como senha, pra não esquecer.", "r": ["\"pedro\"? Até eu sei que isso é fraco."]}
+       ]}}
+    ],
+    "conclusao": ["Valeu demais! Achei que ia ser assustador, mas foi tranquilo.", "Primeira amizade na empresa: o Service Desk!"]
+  },
+  {
+    "id": "d3_tiao_atolada", "dia": 3, "hora": "11:00", "canal": "balcao", "cliente": "tiao",
+    "titulo": "Impressora atolada",
+    "abertura": ["Bom dia! Trouxe o bolo de fubá que eu prometi!", "E aproveitando... a impressora daqui do andar tá piscando uma luz laranja. Eu só fui imprimir. Não mexi em nada."],
+    "etapas": [
+      {"pergunta": "O que você faz?", "opcoes": [
+        {"t": "Vejo qual mensagem aparece no visor.", "ok": true, "r": ["@narrador: O visor diz: \"Atolamento de papel - Bandeja 2\".", "Atolamento! Coitada."]},
+        {"t": "Dou um tapa de leve na lateral dela.", "r": ["Ih, bateu e ela apitou. Acho que ficou brava."]},
+        {"t": "Manda ele usar a impressora do outro andar.", "r": ["Mas lá é o andar da diretoria... o Sr. Hélio olha feio."]}
+      ]}
+    ],
+    "tarefas": [
+      {"alvo": "obj:impressora", "objetivo": "Desatole o papel da impressora (bandeja 2)",
+       "falas": ["@narrador: Você abre a tampa lateral com cuidado."],
+       "minigame": {"titulo": "Desatolando a bandeja 2", "setas": 6},
+       "depois": ["@narrador: Uma folha amassada sai inteira. A impressora volta a funcionar."]},
+      {"alvo": "cliente", "objetivo": "Avise o Seu Tião, no balcão",
+       "falas": ["E aí, ela sobreviveu?"]}
+    ],
+    "conclusao": ["Imprimiu! Você leva jeito com impressora, hein?", "Pega um pedaço de bolo. Pega dois."]
+  },
+  {
+    "id": "d3_helio_audio", "dia": 3, "hora": "13:30", "canal": "telefone", "cliente": "helio",
+    "titulo": "Sem áudio na videochamada",
+    "abertura": ["Aqui é o Hélio. Tenho reunião com o conselho em cinco minutos.", "O aplicativo de reunião diz que meu microfone funciona, mas ninguém me ouve. Isso é uma emergência."],
+    "etapas": [
+      {"pergunta": "O que você verifica primeiro?", "opcoes": [
+        {"t": "Nas configurações de áudio do app, qual microfone está selecionado?", "ok": true, "r": ["Tem dois \"Headset\" na lista... o selecionado é o primeiro.", "...Mudei para o segundo. Estão me ouvindo! Inclusive o meu suspiro."]},
+        {"t": "Reinicia o computador agora.", "r": ["Ele leva onze minutos para ligar. A reunião é em CINCO."]},
+        {"t": "Faz a reunião pelo celular.", "r": ["Apresentar o balanço trimestral pelo celular? Para o conselho? Não."]}
+      ]},
+      {"pergunta": "Funcionou. Ele parece meio sem graça.", "opcoes": [
+        {"t": "Posso marcar quinze minutos para mostrar os atalhos de áudio.", "ok": true, "r": ["...Pode. Mas não conte para ninguém."]},
+        {"t": "Isso acontece muito com quem não entende de tecnologia.", "r": ["Obrigado pelo diagnóstico. Também sobre mim."]},
+        {"t": "Na próxima, testa antes da reunião.", "r": ["Anotado. É sempre bom ser instruído pelo primeiro atendimento."]}
+      ]}
+    ],
+    "conclusao": ["Obrigado. Sério. Agora preciso convencer o conselho de que gastamos pouco."]
+  },
+  {
+    "id": "d3_katia_monitor", "dia": 3, "hora": "15:00", "canal": "balcao", "cliente": "katia",
+    "titulo": "Monitor sem sinal",
+    "abertura": ["Kátia de novo! Meu segundo monitor diz \"sem sinal\" desde o almoço.", "Eu preciso dos dois. Uma tela é planilha, a outra é a outra planilha."],
+    "etapas": [
+      {"pergunta": "O que você sugere testar?", "opcoes": [
+        {"t": "Trocar o cabo de vídeo antes de trocar o monitor.", "ok": true, "r": ["Faz sentido. Esse cabo tá meio mastigado mesmo. Acho que foi a cadeira."]},
+        {"t": "Monitor novo, esse já era.", "r": ["Pedido de compra leva quinze dias, você sabe."]},
+        {"t": "Usa uma tela só, dá pra dividir.", "r": ["Duas planilhas numa tela? Fonte tamanho seis? Não."]}
+      ]}
+    ],
+    "tarefas": [
+      {"alvo": "obj:estoque", "objetivo": "Pegue um cabo de vídeo no almoxarifado do Backoffice",
+       "falas": ["@narrador: Gaveta de cabos: HDMI, DisplayPort, VGA. Por que ainda tem VGA?"],
+       "depois": ["@narrador: Cabo de vídeo novo em mãos."]},
+      {"alvo": "cliente", "objetivo": "Leve o cabo para a Kátia, no balcão",
+       "falas": ["Achou?"]}
+    ],
+    "conclusao": ["@narrador: Vocês trocam o cabo na mesa dela.", "Voltou! As duas planilhas, lado a lado, como deve ser."]
+  },
+
+  {
+    "id": "d4_marlene_lento", "dia": 4, "hora": "08:40", "canal": "balcao", "cliente": "marlene",
+    "titulo": "Notebook lento",
+    "abertura": ["Bom dia, meu anjo! Meu notebook tá devagar, quase parando.", "Trouxe ele aqui pra você ver. Tá tão quente que dá pra fritar ovo."],
+    "etapas": [
+      {"pergunta": "Por onde você começa?", "opcoes": [
+        {"t": "Abro o gerenciador de tarefas para ver o que está consumindo recursos.", "ok": true, "r": ["@narrador: O navegador está usando 92% da memória. Há 63 abas abertas.", "Mas todas são importantes, meu anjo! Tem receita, ficha de admissão, vídeo de gatinho..."]},
+        {"t": "Formato o notebook.", "r": ["Formatar? E as minhas 63 abas?!"]},
+        {"t": "Peço um notebook novo.", "r": ["Ah, que bom! ...Quinze dias? E até lá eu frito ovo?"]}
+      ]},
+      {"pergunta": "63 abas abertas. O que você orienta?", "opcoes": [
+        {"t": "Salva as abas importantes nos favoritos e fecha o resto.", "ok": true, "r": ["Favoritos! Igual guardar receita na gaveta! Fechei... nossa, ele voltou a respirar."]},
+        {"t": "Fecha tudo sem salvar.", "r": ["Sem salvar?! A receita do pavê da minha sogra tava ali!"]},
+        {"t": "Compra mais memória.", "r": ["Ah, eu não tenho cartão de memória, meu anjo."]}
+      ]}
+    ],
+    "conclusao": ["Ficou rapidinho! Vou te mandar a receita do pavê como agradecimento. Por áudio."]
+  },
+  {
+    "id": "d4_juninho_wifi", "dia": 4, "hora": "10:00", "canal": "telefone", "cliente": "juninho",
+    "titulo": "Wi-Fi da sala de reunião",
+    "abertura": ["SOCORRO! Tô na sala de reunião 3 com um cliente e o Wi-Fi caiu!", "A apresentação tá na nuvem! O cliente tá olhando pro teto!"],
+    "etapas": [
+      {"pergunta": "O que você faz primeiro?", "opcoes": [
+        {"t": "Vejo se é só a sala 3 ou o andar inteiro.", "ok": true, "r": ["Só aqui! O pessoal do corredor tá navegando normal."]},
+        {"t": "Manda ele rotear a internet do celular.", "r": ["Meu plano é de 2 giga. A apresentação tem 4. Com vídeo de drone."]},
+        {"t": "Pede pro cliente voltar amanhã.", "r": ["Ele veio de outro estado!"]}
+      ]}
+    ],
+    "tarefas": [
+      {"alvo": "npc:davi", "objetivo": "Peça ajuda ao Davi, no Telecom (a Luana está em reunião)",
+       "falas": ["Wi-Fi da sala 3? Deixa comigo! É só reiniciar o prédio, né?"],
+       "etapa": {"pergunta": "Como você orienta o Davi?", "opcoes": [
+         {"t": "Antes, vê no painel se o ponto de acesso da sala 3 tem energia na porta.", "ok": true, "r": ["Painel... achei! A porta do ponto de acesso tá sem energia. Religa lá no patch panel?"]},
+         {"t": "Reinicia tudo, o prédio inteiro.", "r": ["Sério? ...Espera. A Luana disse que se eu fizesse isso ela me demitia. E eu nem sou contratado ainda."]},
+         {"t": "Espera a Luana sair da reunião.", "r": ["A reunião dela vai até as onze. O cliente do Juninho vai embora antes."]}
+       ]}},
+      {"alvo": "obj:rack_rede", "objetivo": "Religue a energia do ponto de acesso no patch panel",
+       "falas": ["@narrador: Você localiza a porta do ponto de acesso da sala 3."],
+       "minigame": {"titulo": "Religando o ponto de acesso", "setas": 6},
+       "depois": ["@davi: Voltou! O ponto de acesso tá online!"]}
+    ],
+    "conclusao": ["@juninho: VOLTOU! O cliente amou o vídeo de drone! Vocês salvaram a minha vida!"]
+  },
+  {
+    "id": "d4_pedro_sistema", "dia": 4, "hora": "11:10", "canal": "balcao", "cliente": "pedro",
+    "titulo": "Instalar sistema da Logística",
+    "abertura": ["Oi de novo! Já tô me virando bem.", "Só falta instalar o sistema da Logística. Meu chefe disse que você ia saber."],
+    "etapas": [
+      {"pergunta": "Como instalar?", "opcoes": [
+        {"t": "Ele está na central de software. Te mostro como instalar sozinho.", "ok": true, "r": ["Sozinho? Será que eu consigo? ...Consegui! Tem até um ícone de caminhãozinho!"]},
+        {"t": "Instalo com a minha senha de administrador e pronto.", "r": ["Ué, mas aí da próxima vez eu vou ter que vir aqui de novo, né?"]},
+        {"t": "Baixa o instalador da internet.", "r": ["Da internet? Mas de qual site? Tem uns dez com o mesmo nome..."]}
+      ]},
+      {"pergunta": "Ele pergunta se pode instalar outros programas também.", "opcoes": [
+        {"t": "Os homologados da central, sim. Fora disso, abre um chamado.", "ok": true, "r": ["Entendi! A central de software é tipo a loja de aplicativos da empresa."]},
+        {"t": "Pode instalar o que quiser.", "r": ["Sério? Até joguinho? ...Acho que não, né. Isso tem cara de pegadinha."]},
+        {"t": "Nada. Nunca. Nem pensa nisso.", "r": ["Nem o sistema que eu acabei de instalar?"]}
+      ]}
+    ],
+    "conclusao": ["Valeu! Primeira semana e já sei usar a central de software. Minha mãe vai ficar orgulhosa."]
+  },
+  {
+    "id": "d4_sandra_celular", "dia": 4, "hora": "13:30", "canal": "telefone", "cliente": "sandra",
+    "titulo": "E-mail não sincroniza no celular",
+    "abertura": ["Boa tarde. Desde que troquei minha senha, por conta daquele e-mail fraudulento...", "...o e-mail do celular corporativo parou de sincronizar. E ele pede senha a cada trinta segundos."],
+    "etapas": [
+      {"pergunta": "Qual é o provável problema?", "opcoes": [
+        {"t": "O app de e-mail do celular ainda está com a senha antiga. Atualize lá.", "ok": true, "r": ["@narrador: Ela atualiza a senha nas configurações da conta, no celular.", "Sincronizou. Quarenta e sete e-mails novos. Ótimo. Quer dizer, péssimo. Mas funcionou."]},
+        {"t": "Reseta o celular de fábrica.", "r": ["E perder as fotos da minha posse na OAB? Não."]},
+        {"t": "Volta pra senha antiga, que era melhor.", "r": ["A senha antiga está nas mãos de um golpista. Não me parece prudente."]}
+      ]}
+    ],
+    "conclusao": ["Agradeço. Vou mencionar o Service Desk no meu relatório mensal. Positivamente, inclusive."]
+  },
+  {
+    "id": "d4_katia_toner", "dia": 4, "hora": "15:00", "canal": "balcao", "cliente": "katia",
+    "titulo": "Toner do Compras",
+    "abertura": ["Kátia! A impressora do Compras tá imprimindo tudo listrado.", "Os fornecedores vão achar que é código de barras."],
+    "etapas": [
+      {"pergunta": "O que você precisa saber?", "opcoes": [
+        {"t": "Qual é o modelo da impressora? Tá na etiqueta.", "ok": true, "r": ["Modelo CX-410. Tirei foto, olha."]},
+        {"t": "Qualquer toner serve.", "r": ["Qualquer um? Da última vez puseram toner de outro modelo e a impressora fez barulho de dinossauro."]},
+        {"t": "Imprime em modo rascunho.", "r": ["Rascunho listrado continua listrado."]}
+      ]}
+    ],
+    "tarefas": [
+      {"alvo": "obj:estoque", "objetivo": "Pegue um toner CX-410 no almoxarifado do Backoffice",
+       "falas": ["@narrador: Prateleira de toners. CX-200, CX-300... CX-410! O último."],
+       "depois": ["@narrador: Você registra a saída do último toner e anota: \"repor estoque\"."]},
+      {"alvo": "cliente", "objetivo": "Entregue o toner para a Kátia, no balcão",
+       "falas": ["Achou?"]}
+    ],
+    "conclusao": ["Toner novo, impressão lisinha!", "E pode deixar que eu já abro a cotação pra repor o estoque. É o meu trabalho, afinal."]
+  },
+
+  {
+    "id": "d5_tiao_bolo", "dia": 5, "hora": "08:30", "canal": "balcao", "cliente": "tiao",
+    "titulo": "Visita do Seu Tião",
+    "abertura": ["Bom dia! Hoje não é chamado, não. Vim só agradecer pela semana.", "Trouxe bolo de fubá de novo. Com goiabada, desta vez."],
+    "etapas": [
+      {"pergunta": "O que você responde?", "opcoes": [
+        {"t": "Que bolo lindo! Vou dividir com a equipe toda.", "ok": true, "r": ["Isso! Bolo bom é bolo dividido. Minha mãe dizia isso."]},
+        {"t": "Não pode comer no balcão, Seu Tião.", "r": ["Ah... desculpa. Eu deixo na copa, então."]},
+        {"t": "Bolo não resolve chamado.", "r": ["Mas abre o coração, né?"]}
+      ]}
+    ],
+    "conclusao": ["Até semana que vem! E pode deixar que eu não vou mexer em nada."]
+  },
+  {
+    "id": "d5_helio_followup", "dia": 5, "hora": "09:40", "canal": "telefone", "cliente": "helio",
+    "titulo": "Cadê o notebook novo?",
+    "abertura": ["Hélio. A solicitação SC-2231, do meu notebook novo. Alguma novidade?"],
+    "etapas": [
+      {"pergunta": "Como você responde?", "opcoes": [
+        {"t": "Consulto o andamento agora e passo a previsão atualizada.", "ok": true, "r": ["@narrador: Status: aprovado pelo Compras, aguardando o fornecedor. Previsão: quarta-feira.", "Quarta. Hm. Obrigado pela transparência. E pelos atalhos de áudio."]},
+        {"t": "Já deve estar chegando.", "r": ["\"Deve\" não é uma data."]},
+        {"t": "Não sei, liga para o Compras.", "r": ["Liguei para o Service Desk justamente para não ter que ligar para o Compras."]}
+      ]}
+    ],
+    "conclusao": ["Até quarta, então. E... bom trabalho esta semana."]
+  },
+  {
+    "id": "d5_incidente", "dia": 5, "hora": "13:30", "canal": "incidente", "cliente": "celia",
+    "titulo": "INCIDENTE: rede fora do ar",
+    "abertura": ["@narrador: Todos os telefones do andar começam a tocar ao mesmo tempo.", "Meu bem, a rede caiu no prédio inteiro! A migração da Luana deu problema.", "Em cinco minutos vão chegar duzentas ligações. O que a gente faz primeiro?"],
+    "etapas": [
+      {"pergunta": "Como organizar o atendimento?", "opcoes": [
+        {"t": "Abrir um incidente principal e mandar um comunicado único para todos.", "ok": true, "r": ["Isso! Os chamados repetidos ficam vinculados ao incidente principal.", "Rafa, comunicado. Bia... telefone.", "@bia: E-eu? ...Tá. Tá bom. Eu tenho a página três."]},
+        {"t": "Atender cada ligação e abrir um chamado para cada uma.", "r": ["Duzentos chamados iguais? A gente afunda, meu bem. Pensa grande."]},
+        {"t": "Desligar os telefones até a rede voltar.", "r": ["E deixar a empresa inteira no escuro? Não, não."]}
+      ]}
+    ],
+    "tarefas": [
+      {"alvo": "npc:luana", "objetivo": "Vá ao Telecom ajudar a Luana",
+       "falas": ["O switch novo tá OK, o link tá OK, mas o tráfego não passa!", "@rafa: Deixa eu ver a configuração... ESSA porta tá na VLAN errada! O uplink tá no lugar errado!", "@davi: ...Fui eu. Na quarta. Troquei esse cabo de lugar pra ficar simétrico.", "Tá. Obrigada por contar. Agora a gente conserta."],
+       "etapa": {"pergunta": "Como vocês resolvem?", "opcoes": [
+         {"t": "Volta o cabo pra porta original, conforme a documentação da Luana.", "ok": true, "r": ["Isso. Porta 24, uplink. Tá na minha planilha.", "Vai no patch panel e faz a troca. Eu confirmo daqui."]},
+         {"t": "Reinicia o switch novo.", "r": ["Reiniciar não muda cabo de lugar."]},
+         {"t": "Volta tudo pro switch antigo.", "r": ["Três meses de planejamento no lixo por causa de um cabo? Não. A gente acha o cabo."]}
+       ]}},
+      {"alvo": "obj:rack_rede", "objetivo": "Corrija o cabo do uplink no patch panel",
+       "falas": ["@narrador: Você segue o cabo azul até a porta errada. Mão firme."],
+       "minigame": {"titulo": "Corrigindo o uplink", "setas": 8},
+       "depois": ["@luana: Tráfego passando! Link estável! VOLTOU!", "@narrador: Do outro lado da parede, dá pra ouvir o Primeiro Atendimento comemorando."]},
+      {"alvo": "npc:celia", "objetivo": "Volte ao Primeiro Atendimento e avise a Dona Célia",
+       "falas": ["Rede restabelecida em 37 minutos. Recorde da casa, meu bem.", "E olha a Bia ali..."]}
+    ],
+    "conclusao": ["@bia: Atendi doze ligações! DOZE!", "@celia: Incidente encerrado. Que equipe."]
+  },
+  {
+    "id": "d5_marlene_senha", "dia": 5, "hora": "15:20", "canal": "balcao", "cliente": "marlene",
+    "titulo": "Senha esquecida (de novo)",
+    "abertura": ["Oi, meu anjo! Sabe aquela senha nova que eu criei na segunda?", "Esqueci. Com a internet caindo, eu me desesperei e errei tudo."],
+    "etapas": [
+      {"pergunta": "Você já sabe o que fazer.", "opcoes": [
+        {"t": "Primeiro, confirmo sua identidade: matrícula e data de admissão.", "ok": true, "r": ["30418, março de 2011! Eu sabia que você ia perguntar! Decorei!"]},
+        {"t": "Desbloqueio direto, já te conheço.", "r": ["Ai, que fofo. Mas e se fosse a minha irmã gêmea? Eu não tenho, mas e se?"]},
+        {"t": "Tenta lembrar mais um pouquinho.", "r": ["Meu anjo, eu tentei sete vezes. A oitava bloqueia."]}
+      ]},
+      {"pergunta": "Identidade confirmada.", "opcoes": [
+        {"t": "Senha temporária, e você troca no primeiro acesso. Que tal uma frase longa?", "ok": true, "r": ["Frase longa! \"Meu gato Pipoca come ração às sete\". Ninguém adivinha!", "...Agora você sabe. Esquece, tá?"]},
+        {"t": "Coloca a mesma de antes, que é mais fácil.", "r": ["Mas eu esqueci a de antes, meu anjo. Por isso tô aqui."]},
+        {"t": "Anota num papel embaixo do teclado.", "r": ["Embaixo do teclado é o primeiro lugar onde o Juninho olha."]}
+      ]}
+    ],
+    "conclusao": ["Obrigada, meu anjo! Esse balcão nunca foi tão bem atendido.", "Vou te mandar um áudio. Esse tem cinco minutos, porque é especial."]
+  }
+]

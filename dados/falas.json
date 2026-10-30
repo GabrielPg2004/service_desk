@@ -1,0 +1,118 @@
+{
+  "inicio_dia": {
+    "1": [
+      "@narrador: Segunda-feira, 8h. Primeiro dia de Gabriel Esteka no Service Desk da Goestalpine IT-Group.",
+      "@celia: Bom dia! Você deve ser Gabriel. Eu sou a Célia, coordenadora do Service Desk. Boas-vindas!",
+      "@celia: Deixa eu explicar rapidinho. Use as setas para andar e Espaço (ou Enter, ou Z) para interagir.",
+      "@celia: Usuários chegam no balcão ou ligam no telefone da sua mesa. Os chamados abertos aparecem no canto da tela.",
+      "@celia: Em cada atendimento você escolhe o que dizer. Sempre tem um jeito certo. Errou? Respira e tenta de novo.",
+      "@celia: Quando alguém da equipe quiser conversar, aparece um balão amarelo. Conversa com eles, viu? Equipe é tudo.",
+      "@celia: O expediente vai até as 17h. Esc abre o menu. Agora vai, que o Seu Tião já está vindo ali."
+    ],
+    "2": [
+      "@narrador: Terça-feira. O cheiro de café já tomou conta do andar.",
+      "@celia: Bom dia! Hoje o Sr. Hélio vem pessoalmente. Paciência e educação, sempre."
+    ],
+    "3": [
+      "@narrador: Quarta-feira. Meio da semana, meio do café.",
+      "@celia: Bom dia, meu bem. Tem colaborador novo chegando hoje. Capricha no acolhimento."
+    ],
+    "4": [
+      "@narrador: Quinta-feira. O ar-condicionado do Telecom está fazendo um barulho novo.",
+      "@celia: Bom dia. Amanhã a Luana faz a migração do switch. Hoje é dia de deixar tudo em ordem."
+    ],
+    "5": [
+      "@narrador: Sexta-feira. Dia de migração no Telecom. O que poderia dar errado?",
+      "@celia: Bom dia! Último dia da semana. Vamos fechar com chave de ouro."
+    ]
+  },
+
+  "almoco": {
+    "1": ["@narrador: Meio-dia. Hora do almoço.", "@rafa: Bandejão hoje tem estrogonofe! Corre que acaba!", "@narrador: Uma hora depois, todo mundo volta de barriga cheia."],
+    "2": ["@narrador: Meio-dia. Hora do almoço.", "@otavio: Eu almoço na minha mesa. Não insistam.", "@narrador: Ninguém insistiu."],
+    "3": ["@narrador: Meio-dia. A equipe almoça junta no restaurante da esquina.", "@luana: Quem pedir salada no rodízio paga a conta.", "@narrador: O Davi pediu salada."],
+    "4": ["@narrador: Meio-dia. Hora do almoço.", "@bia: Trouxe bolo de cenoura pra equipe! Com cobertura de chocolate!", "@narrador: O bolo durou exatos quatro minutos."],
+    "5": ["@narrador: Meio-dia. Almoço de sexta, o melhor da semana.", "@davi: Hoje à tarde é a migração! Vai ser histórico!", "@luana: Não fala isso. Dá azar."]
+  },
+
+  "fim_dia": {
+    "1": ["@narrador: 17h. Fim do primeiro dia.", "@celia: Nada mal para um primeiro dia. Descansa, que amanhã tem mais."],
+    "2": ["@narrador: 17h. Fim do expediente.", "@rafa: Mais um dia sobrevivido! Bora, que o ônibus não espera."],
+    "3": ["@narrador: 17h. Fim do expediente.", "@bia: Até amanhã! Hoje eu quase atendi o telefone!"],
+    "4": ["@narrador: 17h. Fim do expediente.", "@luana: Amanhã é o grande dia. Dorme cedo, todo mundo."],
+    "5": ["@narrador: 17h de sexta-feira. A semana acabou.", "@celia: Pessoal, antes de irem embora... venham aqui um minutinho."]
+  },
+
+  "final_abertura": [
+    "@celia: Pessoal, que semana.",
+    "@celia: Gabriel chegou na segunda sem saber onde ficava a impressora. Hoje segurou um incidente com a gente.",
+    "@otavio: Hm. Até que dá pro gasto.",
+    "@luana: Vindo do Otávio, isso é praticamente um abraço.",
+    "@rafa: E eu prometi um apelido. Aí vai: \"Chamado Aberto\". Porque tá sempre disponível pra todo mundo.",
+    "@celia: Agora é oficial: o Service Desk da Goestalpine IT-Group ganhou mais uma pessoa na família."
+  ],
+
+  "epilogos": {
+    "celia": {
+      "bom": "Dona Célia adiou a aposentadoria e conduziu a chegada do chatbot \"do jeito do Service Desk\". A suculenta na sua mesa já deu duas mudas.",
+      "neutro": "Dona Célia ficou mais um ano. Continua cobrando descrição caprichada em todo chamado, inclusive nos seus."
+    },
+    "rafa": {
+      "bom": "Rafa passou na certificação na terceira tentativa e foi para o Telecom. Ainda dá apelido para todo mundo. A live já tem 41 espectadores.",
+      "neutro": "Rafa segue no N1, contando piadas no headset. O livro de redes ainda calça a mesa. Por enquanto."
+    },
+    "bia": {
+      "bom": "Bia foi efetivada como analista. Hoje treina os novos estagiários com um roteiro de doze páginas e uma caneta dourada.",
+      "neutro": "Bia segue no estágio, fazendo listas coloridas. Ainda prefere e-mail, mas já atende o telefone no segundo toque."
+    },
+    "otavio": {
+      "bom": "Otávio liderou a migração para o sistema de ativos. Na tela de login, em letras miúdas: \"baseado na Planilha Mestra\". O Macro continua na mesa dele.",
+      "neutro": "Otávio migrou os dados para o sistema novo resmungando. Guarda uma cópia da Planilha Mestra num pendrive. Por segurança."
+    },
+    "luana": {
+      "bom": "O Pacote Perdido lançou um EP chamado \"Timeout\". O Telecom ganhou uma placa: \"Aqui a internet nasce\". Ninguém mais pisa nos cabos.",
+      "neutro": "Luana segue mantendo a rede de pé, discretamente. Quando funciona, ninguém lembra. Ela já se acostumou."
+    },
+    "davi": {
+      "bom": "Davi documentou cada cabo do patch panel. O vídeo \"O dia em que eu derrubei a internet\" virou material de treinamento da empresa.",
+      "neutro": "Davi continua gravando vídeos. Agora, pelo menos, sem filmar a tela dos outros."
+    }
+  },
+
+  "titulos": [
+    {"min": 2.7, "titulo": "Lenda do Primeiro Atendimento"},
+    {"min": 2.2, "titulo": "Analista de Confiança"},
+    {"min": 1.6, "titulo": "Sobrevivente do Balcão"},
+    {"min": 0, "titulo": "Pessoa Nova (com muito potencial)"}
+  ],
+
+  "falas_soltas": {
+    "celia": ["Chamado bem descrito é chamado meio resolvido.", "Já regou alguma coisa hoje? Planta, ideia, amizade...", "Se o telefone tocar, atende sorrindo. A pessoa percebe pela voz.", "Trinta anos e ainda me surpreendo com o que fazem com uma impressora."],
+    "rafa": ["Sabia que a Dra. Sandra fala \"inadmissível\" em média quatro vezes por chamado? Eu contei.", "Meu headset tem luz colorida. Não serve pra nada, mas me deixa mais rápido.", "Se o Juninho aparecer pedindo pra instalar algo \"rapidinho\", corre.", "Tô com fome. Que horas são? Ainda? Nossa."],
+    "bia": ["Rosa é senha, azul é impressora, verde é acesso, roxo é mistério.", "Será que eu falo muito baixo no telefone? Acho que eu falo muito baixo no telefone.", "Fiz uma lista de coisas pra fazer. E uma lista das listas.", "Hoje eu vou atender pelo menos uma ligação. Acho."],
+    "otavio": ["Abre chamado.", "Não.", "Hm.", "Se é urgente, por que ninguém avisou ontem?", "Reunião é um chamado que nunca fecha."],
+    "luana": ["Não pisa no cabo.", "Abraçadeira. A resposta quase sempre é abraçadeira.", "Latência baixa, humor alto.", "Se o Davi te pedir pra segurar um cabo, não segura."],
+    "davi": ["Já tô com 340 seguidores! Quer dizer, 338. Dois saíram.", "A Luana disse que eu tenho potencial. Ou que eu sou um potencial problema. Não lembro.", "Chefia! Tudo nos conformes?", "Um dia ainda faço um vídeo viral sobre cabeamento estruturado."]
+  },
+
+  "espera": ["Tô aqui esperando, viu?", "Sem pressa! Quer dizer... com um pouquinho de pressa.", "Fico aqui no balcão, tá?"],
+  "cliente_sai": ["Vou voltar pra minha mesa. Me avisa quando resolver!"],
+
+  "objetos": {
+    "cafeteira": ["@narrador: Café passado na hora. Você enche uma caneca e sente a alma voltar ao corpo.", "@narrador: Um post-it na garrafa: \"Quem tomar o último, passa outro. - A Gestão\"."],
+    "bebedouro": ["@narrador: Água gelada. Hidratação é saúde, e saúde é SLA."],
+    "quadro_branco": ["@narrador: No quadro: \"Meta da semana: SLA 95%. Bolo se bater 98%\".", "@narrador: Alguém desenhou um gato no canto do quadro. Ele está de headset."],
+    "impressora": ["@narrador: A PA-IMP-01. Ela parece te observar.", "@narrador: Bandeja 1: cheia. Bandeja 2: misteriosa."],
+    "estoque": ["@narrador: Prateleiras do almoxarifado: notebooks, headsets, toners e um cabo VGA que ninguém sabe de onde veio."],
+    "rack_rede": ["@narrador: Patch panel organizado por cor. Melhor não mexer sem motivo."],
+    "rack": ["@narrador: Os servidores piscam em verde, tranquilos. Tudo funcionando. Por enquanto."],
+    "planta": ["@narrador: Uma planta bem cuidada. Alguém rega com conta-gotas."],
+    "porta": ["@narrador: Ainda não é hora de ir embora."],
+    "tv_painel": ["@narrador: Painel de monitoramento: todos os links verdes. A Luana sorri para ele às vezes."],
+    "poster": ["@narrador: Pôster da banda Pacote Perdido. Turnê \"Sem Retorno de Ping\"."],
+    "bancada": ["@narrador: Alicate de crimpar, testador de cabo e um pacote gigante de abraçadeiras."],
+    "mesa_reuniao": ["@narrador: A mesa de reunião do Backoffice. O Otávio nunca senta aqui."],
+    "telefone_mudo": ["@narrador: O telefone está quieto. Aproveite enquanto dura."],
+    "telefone_incidente": ["@narrador: Os telefones não param, mas a Bia está segurando as ligações. Foco no incidente!"]
+  }
+}

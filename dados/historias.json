@@ -1,0 +1,259 @@
+{
+  "celia": [
+    {"dia": 1, "hora": "10:00",
+     "falas": ["Meu bem, vem cá um minutinho.", "Trinta anos neste setor. Vou te contar o segredo do Service Desk.", "O que você acha que é a coisa mais importante num chamado?"],
+     "opcoes": [
+       {"t": "Uma boa descrição, pra quem pegar depois entender tudo.", "ok": true, "r": ["Isso! Chamado sem descrição é chamado que não existe.", "Quem vem depois agradece. E quem vem depois pode ser você mesmo, daqui a seis meses."]},
+       {"t": "Fechar o mais rápido possível.", "r": ["Rápido é bom. Rápido e reaberto amanhã, não.", "Velocidade sem registro é só correria, meu bem."]},
+       {"t": "Deixar o usuário feliz, custe o que custar.", "r": ["Feliz é ótimo. Mas \"custe o que custar\" já me custou uma impressora a laser em 2009."]}
+     ],
+     "fim": ["Agora volta pro balcão. E capricha na descrição!"]},
+    {"dia": 2, "hora": "09:30",
+     "falas": ["@narrador: Dona Célia rega uma fileira de suculentas com um conta-gotas.", "Cada uma dessas foi presente de alguém que passou por este balcão.", "Essa foi do Marcão, que hoje é gerente de infraestrutura. Aquela foi da Jéssica, que virou desenvolvedora."],
+     "opcoes": [
+       {"t": "Então essa mesa é um mural de histórias.", "ok": true, "r": ["...É exatamente isso. Nunca tinha pensado desse jeito.", "Quem sabe um dia não tem uma sua aqui."]},
+       {"t": "Suculenta é fácil, nem precisa regar.", "r": ["Precisa, sim! Pouco, mas precisa. Igual gente."]},
+       {"t": "Dá pra abrir chamado pra manutenção regar.", "r": ["Manutenção? O Seu Tião rega com balde, meu bem. Balde!"]}
+     ],
+     "fim": ["Agora vai, que o telefone não atende sozinho."]},
+    {"dia": 3, "hora": "09:00",
+     "falas": ["Chegou um e-mail da diretoria. Querem implantar um chatbot no primeiro atendimento.", "Dizem que vai \"otimizar o fluxo\". Já vi três sistemas novos chegarem prometendo isso.", "O que você acha?"],
+     "opcoes": [
+       {"t": "O chatbot pode cuidar do repetitivo, e a gente cuida das pessoas.", "ok": true, "r": ["Hm. O robô resetando senha às sete da manhã... e a gente com tempo pra quem precisa de verdade.", "Você explicou melhor do que o consultor que cobrou uma fortuna."]},
+       {"t": "Chatbot nunca vai funcionar.", "r": ["Ah, vai funcionar, sim. A questão é para quê.", "Torcer contra não é estratégia, meu bem."]},
+       {"t": "Ótimo, menos trabalho pra gente!", "r": ["Menos trabalho... ou menos gente.", "Cuidado com o que comemora."]}
+     ],
+     "fim": ["Vou levar isso pra reunião de sexta. Obrigada pela opinião."]},
+    {"dia": 4, "hora": "10:30",
+     "falas": ["Posso te contar uma coisa? Mas fica entre nós.", "Estou pensando em me aposentar. Ano que vem, talvez.", "Trinta anos... comecei aqui trocando fita de backup."],
+     "opcoes": [
+       {"t": "Do que a senhora acha que vai sentir mais falta?", "ok": true, "r": ["Das pessoas. Sempre das pessoas.", "Do Seu Tião trazendo bolo. Do Otávio reclamando. Do telefone tocando... tá, do telefone não."]},
+       {"t": "Já vai tarde! Brincadeira, brincadeira.", "r": ["Ha. Ha. Vou lembrar dessa na sua avaliação.", "...Brincadeira também. Acho."]},
+       {"t": "E quem fica com a sua mesa?", "r": ["Já de olho na mesa? Ela vem com suculentas e responsabilidade, viu?"]}
+     ],
+     "fim": ["Bom, ainda não decidi nada. Volta pro trabalho."]},
+    {"dia": 5, "hora": "13:30", "apos": "d5_incidente",
+     "falas": ["Hoje foi um daqueles dias que viram história.", "Vi o setor inteiro se mexendo junto. A Bia no telefone, o Rafa achando a VLAN, a Luana comandando o Telecom...", "Decidi uma coisa: vou ficar mais um ano. Pra conduzir a transição e treinar quem fica."],
+     "opcoes": [
+       {"t": "Vai ser uma honra aprender com a senhora.", "ok": true, "r": ["A honra é minha, meu bem.", "@narrador: Dona Célia separa uma suculenta pequena e coloca no canto da sua mesa."]},
+       {"t": "Então o chatbot foi cancelado?", "r": ["Não, não. O chatbot vem. Mas vem do nosso jeito."]},
+       {"t": "Mais um ano? Achei que a senhora estava cansada.", "r": ["Cansada eu estou. Mas tem coisa que cansa e alimenta ao mesmo tempo."]}
+     ],
+     "fim": ["Agora vai terminar seu dia. Sexta-feira é sagrada."]}
+  ],
+
+  "rafa": [
+    {"dia": 1, "hora": "08:15",
+     "falas": ["E aí, pessoa nova! Rafa, analista N1. Prazer!", "Dica de sobrevivência: aqui todo usuário tem apelido.", "A Marlene do RH é a Rainha do Áudio de Quatro Minutos. O Sr. Hélio é o Diretor Cadê Meu Arquivo. O Juninho é o Instala Isso Rapidinho."],
+     "opcoes": [
+       {"t": "Haha! E qual vai ser o meu apelido?", "ok": true, "r": ["Ainda não sei. Apelido bom precisa de uma história.", "Me dá uma semana que eu te arrumo um."]},
+       {"t": "Não tenho tempo pra papo agora.", "r": ["Opa, foi mal. Modo produtividade ativado, entendi."]},
+       {"t": "Você devia ser comediante, não analista.", "r": ["Eu sei. Mas comediante não tem plano de saúde.", "...Ha. Ha."]}
+     ],
+     "fim": ["Qualquer coisa, grita. Eu tô sempre de headset, mas escuto."]},
+    {"dia": 2, "hora": "10:00",
+     "falas": ["Ontem fiz live de jogo retrô. Zerei um jogo de nave de 1991 sem perder nenhuma vida!", "Tinha... três pessoas assistindo. Uma era minha mãe."],
+     "opcoes": [
+       {"t": "Três pessoas que escolheram estar lá. Isso conta!", "ok": true, "r": ["Né? A minha mãe nem gosta de jogo. Isso é amor.", "Valeu. Sério."]},
+       {"t": "Só três? Talvez seja hora de desistir.", "r": ["Desistir? Eu tô só começando, pô."]},
+       {"t": "Por que você não joga jogos novos?", "r": ["Porque jogo novo tem 80 giga. Jogo velho cabe num disquete e tem alma."]}
+     ],
+     "fim": ["Se quiser aparecer na live, é quinta, às nove."]},
+    {"dia": 3, "hora": "11:30",
+     "falas": ["@narrador: Rafa fecha a gaveta rápido demais. Dá pra ver a capa de um livro: \"Fundamentos de Redes - Guia de Certificação\".", "Ah, isso? Nada, não. É calço de mesa."],
+     "opcoes": [
+       {"t": "Quer estudar junto no almoço? Posso te tomar as perguntas.", "ok": true, "r": ["...Sério? Você faria isso?", "Tá. Mas se eu errar sub-rede, você não ri."]},
+       {"t": "Calço de mesa de 600 páginas, hein? Boa sorte.", "r": ["É. Mesa bamba exige respeito."]},
+       {"t": "Pra que certificação, se você já é N1?", "r": ["Porque eu não quero ser N1 pra sempre, ué.", "Opa. Falei demais."]}
+     ],
+     "fim": ["Não conta pra ninguém, tá?"]},
+    {"dia": 4, "hora": "14:00",
+     "falas": ["Posso falar uma coisa meio séria? É raro, aproveita.", "Já reprovei duas vezes nessa certificação. Todo mundo acha que eu sou só o palhaço do setor.", "Às vezes acho que nem eu me levo a sério."],
+     "opcoes": [
+       {"t": "Você é quem faz o setor respirar. E isso não te impede de ser técnico.", "ok": true, "r": ["...Caramba. Isso foi bonito.", "Tá bom, vou tentar de novo. Terceira vez é a da sorte, né?"]},
+       {"t": "Talvez o Telecom não seja pra você.", "r": ["É... talvez.", "@narrador: Rafa fica em silêncio por um minuto inteiro. Raro."]},
+       {"t": "Relaxa, ninguém lembra das suas reprovações.", "r": ["Eu lembro. Toda vez que abro aquele livro."]}
+     ],
+     "fim": ["Bom, chega de drama. Volta pro balcão antes que a Marlene mande áudio."]},
+    {"dia": 5, "hora": "13:30", "apos": "d5_incidente",
+     "falas": ["Você viu aquilo? VIU?", "A Luana olhando o switch e eu: \"essa porta tá na VLAN errada\". E TAVA!", "Meses estudando sub-rede no almoço serviram pra alguma coisa!"],
+     "opcoes": [
+       {"t": "Viu? O \"palhaço\" sabia de VLAN o tempo todo.", "ok": true, "r": ["HAHA! O Palhaço da VLAN. Esse é o meu apelido agora.", "E o seu já tá decidido. Conto na hora certa."]},
+       {"t": "Foi sorte.", "r": ["Sorte nada! Foi sub-rede /24 na veia!"]},
+       {"t": "Calma, foi só uma VLAN.", "r": ["\"Só uma VLAN\"... deixa eu ser feliz, vai."]}
+     ],
+     "fim": ["Hoje à noite tem live especial. Vou contar essa história."]}
+  ],
+
+  "bia": [
+    {"dia": 1, "hora": "09:15",
+     "falas": ["Oi! Desculpa, tô no meio de uma coisa...", "@narrador: Bia está organizando um caderno com canetas de catorze cores diferentes.", "Cada cor é um tipo de chamado. Rosa é senha, azul é impressora, verde é acesso... roxo é \"não sei o que é ainda\"."],
+     "opcoes": [
+       {"t": "Que sistema incrível! Me ensina as cores?", "ok": true, "r": ["S-sério? Ninguém nunca pediu isso!", "Vou fazer uma legenda pra você. Com marca-texto."]},
+       {"t": "Tudo isso pra anotar chamado?", "r": ["É que... se eu não anoto, eu esqueço. E se eu esqueço, eu erro.", "Desculpa."]},
+       {"t": "Não é mais fácil usar o sistema de chamados?", "r": ["Eu uso também. É que no papel eu me sinto mais segura."]}
+     ],
+     "fim": ["Bom, vou voltar pras minhas cores."]},
+    {"dia": 2, "hora": "11:00",
+     "falas": ["@narrador: O telefone da mesa da Bia toca. Ela congela e fica olhando para ele.", "E se for alguém bravo? E se eu não souber resolver? E se eu gaguejar?", "Tocou de novo... ai."],
+     "opcoes": [
+       {"t": "Respira. Eu atendo essa e você escuta. Na próxima, você tenta.", "ok": true, "r": ["@narrador: Você atende. Era só alguém perguntando o ramal da cantina.", "...Só isso? Tá. Na próxima eu tento. Talvez."]},
+       {"t": "É só atender, ué.", "r": ["\"É só atender\"... é o que todo mundo diz.", "@narrador: O telefone para de tocar. Bia suspira."]},
+       {"t": "Deixa tocar, uma hora para.", "r": ["@narrador: O telefone para. Bia parece aliviada e culpada ao mesmo tempo."]}
+     ],
+     "fim": ["Eu odeio telefone. Por que as pessoas não mandam e-mail?"]},
+    {"dia": 3, "hora": "10:15",
+     "falas": ["Fiz uma coisa ontem à noite...", "@narrador: Bia mostra três páginas com um roteiro de atendimento telefônico. Tem até fluxograma.", "\"Bom dia, Service Desk, Bia falando, como posso ajudar?\" E depois tem os caminhos pra cada resposta."],
+     "opcoes": [
+       {"t": "Seu roteiro tá ótimo. Quer ensaiar comigo?", "ok": true, "r": ["Você faz o usuário? Faz a Marlene!", "@narrador: Vocês ensaiam três vezes. Na terceira, ela nem olha o papel."]},
+       {"t": "Roteiro deixa a gente meio robótico.", "r": ["Robótico é melhor que travado...", "Mas tá, vou tentar improvisar. Talvez."]},
+       {"t": "Usuário nunca segue roteiro.", "r": ["Eu sei! Por isso tem a página três: \"imprevistos\"."]}
+     ],
+     "fim": ["Obrigada. De verdade."]},
+    {"dia": 4, "hora": "13:45",
+     "falas": ["@narrador: Bia está com os olhos vermelhos, encarando o monitor.", "Ontem eu resetei a senha da pessoa errada. Tem duas Marias Silva no sistema.", "Já corrigi e avisei a Dona Célia, mas... eu me sinto péssima."],
+     "opcoes": [
+       {"t": "Erro acontece. O importante é que você avisou e corrigiu.", "ok": true, "r": ["Você acha?", "...A Dona Célia disse a mesma coisa. Acho que eu precisava ouvir duas vezes pra acreditar."]},
+       {"t": "Nossa, que vacilo.", "r": ["Eu sei. Eu sei, eu sei.", "@narrador: Bia volta a encarar o monitor."]},
+       {"t": "Relaxa, é só não contar pra ninguém.", "r": ["Mas eu já contei... e esconder seria pior, não?"]}
+     ],
+     "fim": ["Vou anotar no caderno: \"conferir a matrícula, sempre\". Em vermelho."]},
+    {"dia": 5, "hora": "13:30", "apos": "d5_incidente",
+     "falas": ["VOCÊ VIU? Eu atendi DOZE ligações!", "Sozinha! Durante o incidente! E ninguém gritou comigo! Bom, um gritou, mas eu usei a página três!", "Acho... acho que eu consigo."],
+     "opcoes": [
+       {"t": "Você foi incrível hoje. E nem precisou do roteiro.", "ok": true, "r": ["Precisei um pouquinho. Mas só um pouquinho!", "Obrigada por ter ensaiado comigo. Sério."]},
+       {"t": "Doze? Eu atendi vinte.", "r": ["Ah... é. Parabéns.", "@narrador: O brilho nos olhos dela diminui um pouco."]},
+       {"t": "Agora você vai atender telefone todo dia.", "r": ["...Todo dia? Tá. Tá bom. Acho."]}
+     ],
+     "fim": ["Vou comprar uma caneta dourada. Pra anotar as vitórias."]}
+  ],
+
+  "otavio": [
+    {"dia": 1, "hora": "11:00",
+     "falas": ["Hm. Pessoa nova do Service Desk.", "Regra número um do Backoffice: se não tem chamado aberto no sistema, não existe.", "Regra número dois: ver regra número um."],
+     "opcoes": [
+       {"t": "Entendido. Tudo pelo sistema.", "ok": true, "r": ["Hm. Você vai durar mais que o último."]},
+       {"t": "Mas e se for uma coisinha rápida?", "r": ["\"Coisinha rápida\" é como começam todas as tragédias.", "Abre chamado."]},
+       {"t": "Você é sempre mal-humorado assim?", "r": ["Não. Às vezes estou dormindo."]}
+     ],
+     "fim": ["Pode ir."]},
+    {"dia": 2, "hora": "11:30",
+     "falas": ["@narrador: Otávio está com uma planilha aberta. São 47 abas. Duas se chamam \"NÃO MEXER\" e \"NÃO MEXER MESMO\".", "Essa é a Planilha Mestra. Controle de todos os ativos da empresa desde 2013.", "Fui eu que fiz. Doze anos de macros."],
+     "opcoes": [
+       {"t": "Você fez tudo isso? É uma obra de arte.", "ok": true, "r": ["@narrador: Otávio fica em silêncio. O canto da boca dele se mexe um milímetro.", "...Ninguém nunca chamou de obra de arte. Chamam de \"aquela planilha que trava\"."]},
+       {"t": "Por que não usam um sistema de verdade?", "r": ["Porque, em 2013, o \"sistema de verdade\" era eu.", "Próxima pergunta."]},
+       {"t": "Planilha é coisa do passado, né?", "r": ["O passado funciona. O futuro ainda está em homologação."]}
+     ],
+     "fim": ["Volta pro seu balcão."]},
+    {"dia": 3, "hora": "14:30",
+     "falas": ["@narrador: Na mesa do Otávio há um bonsai minúsculo, impecavelmente podado.", "Não toca.", "...Nove anos. Ganhei quando entrei no Backoffice. Ele está comigo desde a primeira versão da planilha."],
+     "opcoes": [
+       {"t": "Nove anos de paciência. Combina com você.", "ok": true, "r": ["Paciência? Eu?", "...Hm. Talvez. Com plantas, pelo menos."]},
+       {"t": "Parece uma planta normal, só que pequena.", "r": ["E você parece uma pessoa normal, só que barulhenta."]},
+       {"t": "Posso podar um galhinho?", "r": ["Não.", "Não mesmo."]}
+     ],
+     "fim": ["Ele se chama Macro. Não conta pra ninguém."]},
+    {"dia": 4, "hora": "09:30",
+     "falas": ["@narrador: Otávio está mais carrancudo que o normal. E isso não é fácil.", "Saiu o comunicado. Vão implantar um sistema novo de gestão de ativos.", "A Planilha Mestra vai ser \"descontinuada\". Doze anos. Descontinuada."],
+     "opcoes": [
+       {"t": "O sistema novo vai precisar de quem conhece cada dado. Ninguém conhece como você.", "ok": true, "r": ["@narrador: Otávio para de digitar pela primeira vez na semana.", "...Isso é verdade. Eles nem sabem que o notebook 4471 está, na verdade, no almoxarifado de Contagem."]},
+       {"t": "Ainda bem, aquela planilha travava toda hora.", "r": ["Travava porque alguém colocou formatação condicional na aba 31. Não fui eu.", "Pode ir."]},
+       {"t": "Faz parte, a tecnologia evolui.", "r": ["Obrigado, enciclopédia."]}
+     ],
+     "fim": ["Tenho trabalho."]},
+    {"dia": 5, "hora": "11:00",
+     "falas": ["@narrador: Otávio vem até você. Com duas xícaras de café.", "Me chamaram pra liderar a migração para o sistema novo.", "Eu disse que só aceito se a Planilha Mestra for a base oficial da importação. Aceitaram."],
+     "opcoes": [
+       {"t": "Você vai ensinar o sistema novo a ser uma planilha melhor.", "ok": true, "r": ["Hm. Exatamente isso.", "O café é seu. Não se acostuma."]},
+       {"t": "Então agora você vai ter que ir em reunião, né?", "r": ["...Ninguém tinha me falado das reuniões.", "@narrador: Otávio olha para o café como se ele tivesse traído sua confiança."]},
+       {"t": "Parabéns! Mas e o bonsai?", "r": ["O Macro vai junto. Óbvio."]}
+     ],
+     "fim": ["Agora some daqui antes que alguém veja que eu sorri."]}
+  ],
+
+  "luana": [
+    {"dia": 1, "hora": "11:30",
+     "falas": ["Ei! Não pisa no cabo.", "...Tá, você não ia pisar. Mas todo mundo que entra aqui pisa.", "Boas-vindas ao Telecom. Aqui é onde a internet nasce."],
+     "opcoes": [
+       {"t": "Pode deixar. Esse rack tá impecável, aliás.", "ok": true, "r": ["@narrador: Os olhos da Luana brilham.", "Você reparou na organização por cor? Ninguém repara na organização por cor."]},
+       {"t": "Que bagunça de fios.", "r": ["Bagunça?! Cada cabo aqui tem nome, sobrenome e etiqueta!"]},
+       {"t": "Pra que tanto cabo? Hoje não é tudo Wi-Fi?", "r": ["Wi-Fi. Ha. E de onde você acha que o Wi-Fi vem? Da nuvem?", "...Não responde."]}
+     ],
+     "fim": ["Problema de rede, chamado pra mim. Problema de cabo, chamado pra mim duas vezes."]},
+    {"dia": 2, "hora": "14:30",
+     "falas": ["@narrador: Luana batuca na mesa com duas canetas, num ritmo acelerado.", "Ensaio hoje à noite. Eu toco baixo numa banda.", "Chama \"Pacote Perdido\". É metal."],
+     "opcoes": [
+       {"t": "Pacote Perdido? Nome perfeito pra uma banda de Telecom!", "ok": true, "r": ["NÉ? O Davi sugeriu \"Ping Alto\", mas eu vetei.", "Sábado tem show. Se quiser ir, fala."]},
+       {"t": "Metal não é só barulho?", "r": ["Barulho organizado. Igual rede.", "Você não entenderia."]},
+       {"t": "Vocês tocam em festa da firma?", "r": ["Tocamos uma vez. O diretor pediu pagode. Nunca mais."]}
+     ],
+     "fim": ["Agora deixa eu voltar pros meus switches."]},
+    {"dia": 3, "hora": "13:30",
+     "falas": ["Sabe o que é engraçado no Telecom?", "Quando a rede funciona, ninguém lembra que a gente existe. Quando cai, todo mundo sabe nosso ramal de cor.", "Às vezes parece que a gente é invisível."],
+     "opcoes": [
+       {"t": "Quando a rede funciona é porque alguém trabalhou muito. Eu reparei.", "ok": true, "r": ["...Valeu. Sério.", "Você é a primeira pessoa do Primeiro Atendimento que fala isso sem estar pedindo alguma coisa."]},
+       {"t": "Faz parte do trabalho, né?", "r": ["É. Faz. Mas cansa."]},
+       {"t": "Pelo menos ninguém te liga quando tá tudo bem.", "r": ["É... vendo por esse lado, talvez seja uma vantagem."]}
+     ],
+     "fim": ["Bom. Voltando a ser invisível."]},
+    {"dia": 4, "hora": "11:30",
+     "falas": ["Amanhã à tarde eu faço a migração do switch principal. Planejei por três meses.", "O Davi quer fazer \"pra aprender\". Mas ele mexeu no patch panel essa semana sem documentar nada.", "Se der problema amanhã, o prédio inteiro fica sem internet."],
+     "opcoes": [
+       {"t": "Quer que eu deixe o Primeiro Atendimento preparado pra avisar os usuários, se precisar?", "ok": true, "r": ["Isso! Um comunicado pronto, um roteiro pro telefone...", "Finalmente alguém que pensa em plano B. Valeu."]},
+       {"t": "Vai dar tudo certo, relaxa.", "r": ["\"Vai dar tudo certo\" não é plano de contingência.", "Mas obrigada pela intenção."]},
+       {"t": "Deixa o Davi fazer, ele aprende.", "r": ["Aprende no switch de teste. No de produção, não."]}
+     ],
+     "fim": ["Amanhã é dia de rezar pro deus dos pacotes."]},
+    {"dia": 5, "hora": "13:30", "apos": "d5_incidente",
+     "falas": ["A diretoria mandou e-mail agradecendo o Telecom. Pelo nome.", "Primeira vez em seis anos.", "E o mais legal: o Primeiro Atendimento segurou os usuários enquanto a gente trabalhava. Fez toda a diferença."],
+     "opcoes": [
+       {"t": "Sábado eu vou no show do Pacote Perdido. Primeira fila!", "ok": true, "r": ["SÉRIO?! Vou te dedicar uma música.", "Ela se chama \"Timeout\". É sobre um ex. E sobre DNS."]},
+       {"t": "Agora vão esquecer de novo até a próxima queda.", "r": ["Provavelmente. Mas hoje eu vou aproveitar."]},
+       {"t": "Mas a culpa foi do Telecom, né?", "r": ["...Foi. E a gente assumiu e resolveu. É isso que importa.", "Mas obrigada por lembrar. Muito delicado."]}
+     ],
+     "fim": ["Agora vou documentar TUDO. Com etiqueta."]}
+  ],
+
+  "davi": [
+    {"dia": 1, "hora": "13:30",
+     "falas": ["Fala, chefia! Davi, estagiário de Telecom. Mas, na prática, eu sou meio que o dono daqui.", "Tô gravando um vídeo: \"um dia na vida de um estagiário de TI\". Já tem duzentas visualizações!"],
+     "opcoes": [
+       {"t": "Haha, e o que o dono do Telecom tá fazendo hoje?", "ok": true, "r": ["Hoje? Organizando... é... cabos. Com a Luana. Ela organiza, eu seguro.", "Mas eu seguro muito bem!"]},
+       {"t": "Achei que a Luana mandava aqui.", "r": ["Ela manda. Mas eu influencio. Tipo um conselheiro."]},
+       {"t": "Estagiário não manda em nada.", "r": ["Ainda. AINDA."]}
+     ],
+     "fim": ["Me segue lá: daviNaTI, tudo junto."]},
+    {"dia": 2, "hora": "10:30",
+     "falas": ["Ei, ei! Aparece no meu vídeo? Vai ser rapidinho!", "É um quadro novo: \"pergunta difícil pro Service Desk\"."],
+     "opcoes": [
+       {"t": "Topo, mas sem filmar tela com dado de usuário, combinado?", "ok": true, "r": ["Ih, verdade. Semana passada eu quase filmei a tela da Dra. Sandra.", "Combinado! Segurança da informação, né? Vou até fazer um vídeo sobre isso."]},
+       {"t": "Não, me deixa trabalhar.", "r": ["Poxa. Tá bom."]},
+       {"t": "Claro! Filma a minha tela, tá cheia de chamado.", "r": ["Massa! Vou dar zoom no nome do... espera. Isso não pode, né?", "A Luana ia me matar."]}
+     ],
+     "fim": ["Vou editar e te mando."]},
+    {"dia": 3, "hora": "15:30",
+     "falas": ["Olha o que eu fiz no patch panel! Reorganizei TUDO.", "Agora tá muito mais bonito. Troquei uns cabos de lugar pra ficar simétrico."],
+     "opcoes": [
+       {"t": "Ficou bonito, mas você documentou as mudanças? A Luana precisa saber.", "ok": true, "r": ["Documentar... tipo, escrever?", "...Vou fazer uma planilha. Depois. Talvez amanhã."]},
+       {"t": "Que top! Faz o meu também?", "r": ["Claro! Onde fica o seu patch panel?", "@narrador: Você não tem um patch panel."]},
+       {"t": "Desfaz agora, antes que alguém veja.", "r": ["Desfazer? Mas tá simétrico!", "E eu nem lembro como tava antes..."]}
+     ],
+     "fim": ["Relaxa, cabo é cabo. O que pode dar errado?"]},
+    {"dia": 4, "hora": "14:45",
+     "falas": ["Posso te perguntar uma coisa? Mas sem rir.", "Você sabe o que é uma VLAN?", "Todo mundo fala e eu fico balançando a cabeça. Metade dos cabos daqui eu não sei pra que serve."],
+     "opcoes": [
+       {"t": "Ninguém nasce sabendo. Pergunta pra Luana, ela vai curtir explicar.", "ok": true, "r": ["Você acha? Ela não vai me achar burro?", "Tá. Vou perguntar. Depois do almoço. Ou amanhã."]},
+       {"t": "Melhor fingir que sabe até descobrir.", "r": ["Era o meu plano! Tá funcionando há seis meses."]},
+       {"t": "Pesquisa num vídeo de alguém.", "r": ["Já vi doze vídeos. Agora eu falo \"VLAN\" com mais confiança. Só isso."]}
+     ],
+     "fim": ["Valeu, chefia."]},
+    {"dia": 5, "hora": "13:30", "apos": "d5_incidente",
+     "falas": ["@narrador: Davi está sentado no chão do Telecom, sem o celular na mão. Raro.", "Fui eu. O cabo que eu troquei na quarta era o do link principal. Deixei na porta errada.", "Eu contei pra Luana. Ela não gritou. Só disse \"obrigada por me contar\". Foi pior."],
+     "opcoes": [
+       {"t": "Assumir foi a coisa mais profissional que eu vi essa semana.", "ok": true, "r": ["Sério?", "...Vou fazer um vídeo sobre isso. \"O dia em que eu derrubei a internet\". Com documentação no final."]},
+       {"t": "É, foi bem grave.", "r": ["Eu sei.", "@narrador: Davi abaixa a cabeça."]},
+       {"t": "Relaxa, ninguém precisava saber.", "r": ["Mas a Luana ia passar a noite procurando o problema. Não dava."]}
+     ],
+     "fim": ["Agora eu vou documentar tudo. A Luana disse que vai me ensinar VLAN."]}
+  ]
+}

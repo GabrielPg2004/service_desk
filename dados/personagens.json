@@ -1,0 +1,37 @@
+{
+  "gabriel": {"nome": "Gabriel Esteka", "cargo": "Analista de Service Desk", "tipo": "jogador"},
+  "narrador": {"nome": "", "cargo": "", "tipo": "narrador"},
+
+  "celia": {
+    "nome": "Dona Célia", "cargo": "Coordenadora do Service Desk", "tipo": "colega",
+    "descricao": "30 anos de casa. Rígida com documentação, coleciona suculentas e chama todo mundo de \"meu bem\"."
+  },
+  "rafa": {
+    "nome": "Rafa", "cargo": "Analista N1", "tipo": "colega",
+    "descricao": "Piadista, fala rápido e dá apelido para todos os usuários. À noite, faz lives de jogos retrô."
+  },
+  "bia": {
+    "nome": "Bia", "cargo": "Estagiária do Primeiro Atendimento", "tipo": "colega",
+    "descricao": "Perfeccionista, tem um caderno com 14 cores de caneta e pavor de telefone tocando."
+  },
+  "otavio": {
+    "nome": "Otávio", "cargo": "Analista de Backoffice", "tipo": "colega",
+    "descricao": "Sarcástico, vive de café preto e planilhas. Odeia reuniões. Cuida de um bonsai há nove anos."
+  },
+  "luana": {
+    "nome": "Luana", "cargo": "Analista de Telecom", "tipo": "colega",
+    "descricao": "Direta e competitiva. Toca baixo numa banda de metal e acha que abraçadeira resolve quase tudo."
+  },
+  "davi": {
+    "nome": "Davi", "cargo": "Estagiário de Telecom", "tipo": "colega",
+    "descricao": "Confiante até demais. Grava vídeos de \"um dia na vida de um estagiário de TI\"."
+  },
+
+  "marlene": {"nome": "Marlene", "cargo": "RH", "tipo": "cliente"},
+  "helio": {"nome": "Sr. Hélio", "cargo": "Diretor Financeiro", "tipo": "cliente"},
+  "juninho": {"nome": "Juninho", "cargo": "Marketing", "tipo": "cliente"},
+  "sandra": {"nome": "Dra. Sandra", "cargo": "Jurídico", "tipo": "cliente"},
+  "tiao": {"nome": "Seu Tião", "cargo": "Manutenção", "tipo": "cliente"},
+  "katia": {"nome": "Kátia", "cargo": "Compras", "tipo": "cliente"},
+  "pedro": {"nome": "Pedro", "cargo": "Logística", "tipo": "cliente"}
+}
